@@ -2,7 +2,7 @@
 
 # dataflow-databricks-sample
 
-<a href=".github/workflows/ci.yml"><img alt="Build" src="https://github.com/JK-77/dataflow-databricks-sample/actions/workflows/ci.yml/badge.svg"/></a>
+<a href=".github/workflows/ci.yml"><img alt="Build" src="https://github.com/JK-77/Data-Flow/actions/workflows/ci.yml/badge.svg"/></a>
 <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
 <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white"/>
 <img alt="Pandas" src="https://img.shields.io/badge/Pandas-Dataframe-150458?logo=pandas&logoColor=white"/>
@@ -39,9 +39,9 @@ Creates `assets/demo.png` and, if possible, `assets/demo.gif`.
 ## Architecture
 ```mermaid
 flowchart LR
-    A[Raw CSV (data/raw)] --> B[Bronze\ncleaned_sales.parquet]
-    B --> C[Silver\nsales_transformed.parquet\n(+ total_amount, validation)]
-    C --> D[Gold\nsales_summary.parquet\n(revenue by region, AOV)]
+    A[Raw CSV (data/raw)] --> B[Bronze<br/>cleaned_sales.parquet]
+    B --> C[Silver<br/>sales_transformed.parquet<br/>(+ total_amount, validation)]
+    C --> D[Gold<br/>sales_summary.parquet<br/>(revenue by region, AOV)]
 ```
 
 ---
