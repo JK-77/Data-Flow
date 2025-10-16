@@ -3,3 +3,4 @@ pyarrow
 pytest
 matplotlib
 pyspark
+imageio

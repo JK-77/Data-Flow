@@ -5,6 +5,13 @@
 
 This repository demonstrates a mini dataflow pipeline using a Databricks-style bronze/silver/gold architecture. It’s a beginner-friendly portfolio project for data engineers. The pipeline ingests CSV data, cleans and transforms it, and produces a final analytics table (e.g., total revenue per region).
 
+## Demo
+If you want a quick visual, generate demo assets:
+```bash
+python scripts/generate_demo.py
+```
+This will create `assets/demo.png` and (if possible) `assets/demo.gif`.
+
 ## Project Structure
 ```
 dataflow-databricks-sample/
@@ -22,6 +29,8 @@ dataflow-databricks-sample/
 │   └── pipeline.py
 ├── tests/
 │   └── test_pipeline.py
+├── scripts/
+│   └── generate_demo.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
@@ -32,6 +41,11 @@ dataflow-databricks-sample/
 ```bash
 pip install -r requirements.txt
 python src/pipeline.py
+```
+
+Run tests:
+```bash
+pytest -q
 ```
 
 Notes:

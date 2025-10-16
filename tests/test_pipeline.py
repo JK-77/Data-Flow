@@ -1,7 +1,11 @@
 import os
+import sys
 
-from src.pipeline import run_all
-from src.utils import Engine, read_parquet
+# Ensure local src is importable when running pytest from repo root
+sys.path.append(os.path.abspath('src'))
+
+from pipeline import run_all
+from utils import Engine, read_parquet
 
 
 def test_pipeline_generates_gold(tmp_path):
