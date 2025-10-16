@@ -39,9 +39,9 @@ Creates `assets/demo.png` and, if possible, `assets/demo.gif`.
 ## Architecture
 ```mermaid
 flowchart LR
-    A[Raw CSV (data/raw)] --> B[Bronze<br/>cleaned_sales.parquet]
-    B --> C[Silver<br/>sales_transformed.parquet<br/>(+ total_amount, validation)]
-    C --> D[Gold<br/>sales_summary.parquet<br/>(revenue by region, AOV)]
+    A[Raw CSV data/raw] --> B[Bronze: cleaned_sales.parquet]
+    B --> C[Silver: sales_transformed.parquet (+ total_amount, validation)]
+    C --> D[Gold: sales_summary.parquet (revenue by region, AOV)]
 ```
 
 ---
