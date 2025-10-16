@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Data outputs
+/data/bronze/
+/data/silver/
+/data/gold/
+
+# Logs and temp
+*.log
+.tmp/
+
+# Pytest cache
+.pytest_cache/
+
+# Spark temp
+spark-warehouse/
+metastore_db/
